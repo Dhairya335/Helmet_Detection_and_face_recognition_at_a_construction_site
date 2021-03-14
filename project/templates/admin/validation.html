@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velonic - Responsive Bootstrap 4 Admin Dashboard Template</title>
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+    <meta content="Coderthemes" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="../../static/adminResources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/app.css" rel="stylesheet" type="text/css"/>
+    <!-- your custom css -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../../static/adminResources/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Top Bar Start -->
+
+
+    {% include 'admin/header.html' %}
+
+
+    <!-- Top Bar End -->
+
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+
+    {% include 'admin/menu.html' %}
+
+
+    <!-- Left Sidebar End -->
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title float-left">Form Validation</h4>
+
+                            <ol class="breadcrumb float-right">
+                                <li class="breadcrumb-item"><a href="#">Velonic</a></li>
+                                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                                <li class="breadcrumb-item active">Form Validation</li>
+                            </ol>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="m-t-0 header-title mb-0">Basic Form</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="userName">User Name<span class="text-danger">*</span></label>
+                                        <input type="text" name="nick" parsley-trigger="change" required
+                                               placeholder="Enter user name" class="form-control" id="userName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailAddress">Email address<span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" name="email" parsley-trigger="change" required
+                                               placeholder="Enter email" class="form-control" id="emailAddress">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass1">Password<span class="text-danger">*</span></label>
+                                        <input id="pass1" type="password" placeholder="Password" required
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passWord2">Confirm Password <span
+                                                class="text-danger">*</span></label>
+                                        <input data-parsley-equalto="#pass1" type="password" required
+                                               placeholder="Password" class="form-control" id="passWord2">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-purple">
+                                            <input id="checkbox6a" type="checkbox">
+                                            <label for="checkbox6a">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group text-right m-b-0">
+                                        <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                            Submit
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                            Cancel
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="m-t-0 header-title mb-0">Horizontal Form</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <form role="form">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-4 col-form-label">Email<span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-7">
+                                            <input type="email" required parsley-type="email" class="form-control"
+                                                   id="inputEmail3" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="hori-pass1" class="col-4 col-form-label">Password<span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-7">
+                                            <input id="hori-pass1" type="password" placeholder="Password" required
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="hori-pass2" class="col-4 col-form-label">Confirm Password
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-7">
+                                            <input data-parsley-equalto="#hori-pass1" type="password" required
+                                                   placeholder="Password" class="form-control" id="hori-pass2">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="webSite" class="col-4 col-form-label">Web Site<span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-7">
+                                            <input type="url" required parsley-type="url" class="form-control"
+                                                   id="webSite" placeholder="URL">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-8 offset-4">
+                                            <div class="checkbox checkbox-purple">
+                                                <input id="checkbox6" type="checkbox">
+                                                <label for="checkbox6">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <div class="col-8 offset-4">
+                                            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                Register
+                                            </button>
+                                            <button type="reset"
+                                                    class="btn btn-secondary waves-effect m-l-5">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end card -->
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="m-t-0 header-title mb-0">Validation type</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <form class="" action="#">
+                                    <div class="form-group">
+                                        <label>Required</label>
+                                        <input type="text" class="form-control" required
+                                               placeholder="Type something"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Equal To</label>
+                                        <div>
+                                            <input type="password" id="pass2" class="form-control" required
+                                                   placeholder="Password"/>
+                                        </div>
+                                        <div class="m-t-10">
+                                            <input type="password" class="form-control" required
+                                                   data-parsley-equalto="#pass2"
+                                                   placeholder="Re-Type Password"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>E-Mail</label>
+                                        <div>
+                                            <input type="email" class="form-control" required
+                                                   parsley-type="email" placeholder="Enter a valid e-mail"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>URL</label>
+                                        <div>
+                                            <input parsley-type="url" type="url" class="form-control"
+                                                   required placeholder="URL"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Digits</label>
+                                        <div>
+                                            <input data-parsley-type="digits" type="text"
+                                                   class="form-control" required
+                                                   placeholder="Enter only digits"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Number</label>
+                                        <div>
+                                            <input data-parsley-type="number" type="text"
+                                                   class="form-control" required
+                                                   placeholder="Enter only numbers"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Alphanumeric</label>
+                                        <div>
+                                            <input data-parsley-type="alphanum" type="text"
+                                                   class="form-control" required
+                                                   placeholder="Enter alphanumeric value"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Textarea</label>
+                                        <div>
+                                            <textarea required class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                Submit
+                                            </button>
+                                            <button type="reset" class="btn btn-secondary waves-effect ml-1">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="m-t-0 header-title mb-0">Range validation</h4>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="header-title m-t-0 mb-4">Range validation</h4>
+
+                                <form action="#">
+
+                                    <div class="form-group">
+                                        <label>Min Length</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-minlength="6" placeholder="Min 6 chars."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Max Length</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-maxlength="6" placeholder="Max 6 chars."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Range Length</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-length="[5,10]"
+                                                   placeholder="Text between 5 - 10 chars length"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Min Value</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-min="6" placeholder="Min value is 6"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Max Value</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-max="6" placeholder="Max value is 6"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Range Value</label>
+                                        <div>
+                                            <input class="form-control" required type="text" min="6"
+                                                   max="100" placeholder="Number between 6 - 100"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Regular Exp</label>
+                                        <div>
+                                            <input type="text" class="form-control" required
+                                                   data-parsley-pattern="#[A-Fa-f0-9]{6}"
+                                                   placeholder="Hex. Color"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mb-0">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                Submit
+                                            </button>
+                                            <button type="reset" class="btn btn-secondary waves-effect ml-1">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end card -->
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+
+        {#                {% include 'admin/footer.html' %}#}
+
+
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/adminResources/js/metisMenu.min.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+
+<!-- App js -->
+<script src="../../static/adminResources/js/jquery.core.js"></script>
+<script src="../../static/adminResources/js/jquery.app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('form').parsley();
+    });
+</script>
+
+</body>
+</html>

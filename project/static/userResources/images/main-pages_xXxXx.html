@@ -1,0 +1,752 @@
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <title>CargoHub</title>
+    <!-- Stylesheets -->
+    <!-- bootstrap v3.3.6 css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- font-awesome css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- flaticon css -->
+    <link href="css/flaticon.css" rel="stylesheet">
+    <!-- factoryplus-icons css -->
+    <link href="css/factoryplus-icons.css" rel="stylesheet">
+    <!-- animate css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- owl.carousel css -->
+    <link href="css/owl.css" rel="stylesheet">
+    <!-- fancybox css -->
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/frontend.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- switcher css -->
+    <link href="css/switcher.css" rel="stylesheet">
+    <link rel="stylesheet" id="factoryhub-color-switcher-css" href="css/switcher/default.css">
+    <!-- revolution slider css -->
+    <link rel="stylesheet" type="text/css" href="css/revolution/settings.css">
+    <link rel="stylesheet" type="text/css" href="css/revolution/layers.css">
+    <link rel="stylesheet" type="text/css" href="css/revolution/navigation.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style type="text/css">.fancybox-margin {
+        margin-right: 17px;
+    }</style>
+    <script type="text/javascript" charset="UTF-8"
+            src="https://maps.googleapis.com/maps-api-v3/api/js/39/10/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+            src="https://maps.googleapis.com/maps-api-v3/api/js/39/10/util.js"></script>
+</head>
+
+<body class="home header-transparent  header-sticky header-v1 hide-topbar-mobile">
+<div id="page">
+
+    <!-- Preloader-->
+    <div class="preloader" style="display: none;"></div>
+
+    <!-- topbar -->
+    <div id="fh-header-minimized" class="fh-header-minimized fh-header-v1" style="height: 111px;"></div>
+    <div id="topbar" class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 pd-right_zero">
+
+
+                    <div class="topbar-left topbar-widgets text-left">
+                        <div id="cargo-office-location-widget-2" class="widget cargo-office-location-widget">
+                            <div class="office-location clearfix">
+
+
+                                <div class="office-switcher_nw"><i class="flaticon-globe "></i><span
+                                        class="fa fa-angle-down"></span>
+                                    <select id="select-box">
+                                        <option value="1">Newyork Office
+
+                                        </option>
+                                        <option value="2"> London Office</option>
+                                        <option value="3"> Tokyo Office</option>
+
+                                    </select>
+                                </div>
+
+
+                                <div id="tab-1" class="tab-content" style="display: block;">
+                                    <ul class="topbar-office  active">
+                                        <li><i class="flaticon-telephone" aria-hidden="true"></i>Phone +012 345 6789
+                                        </li>
+                                        <li><i class="flaticon-web" aria-hidden="true"></i>Mail@CargoHub.com</li>
+                                        <li><i class="flaticon-pin" aria-hidden="true"></i>Cargo Hub, NY 10012, USA</li>
+                                    </ul>
+                                </div>
+                                <div id="tab-2" class="tab-content" style="display: none;">
+                                    <ul class="topbar-office">
+                                        <li><i class="flaticon-telephone" aria-hidden="true"></i>Phone +099 222 1111
+                                        </li>
+                                        <li><i class="flaticon-web" aria-hidden="true"></i>Mail@Evanto.com</li>
+                                        <li><i class="flaticon-pin" aria-hidden="true"></i>Cargo Hub, LD 32614, UK</li>
+                                    </ul>
+                                </div>
+                                <div id="tab-3" class="tab-content" style="display: none;">
+                                    <ul class="topbar-office">
+                                        <li><i class="flaticon-telephone" aria-hidden="true"></i>Phone +098 765 4321
+                                        </li>
+                                        <li><i class="flaticon-web" aria-hidden="true"></i>Mail@Steelthemes.com</li>
+                                        <li><i class="flaticon-pin" aria-hidden="true"></i>Cargo Hub, LE 32614, Japan
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="topbar-right topbar-widgets text-right">
+                        <div class="widget cargohub-social-links-widget">
+                            <div class="list-social style-1">
+                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-skype"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="widget cargo-search-widget">
+                            <div class="topbar-search topbar-search-1">
+                                <a href="#" class="toggle-search" id="toggle-search"><i class="fa fa-search"
+                                                                                        aria-hidden="true"></i></a>
+                                <form class="search-form" action="#">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input type="search" class="search-field" placeholder="Search..." value="">
+                                    <input type="submit" class="search-submit" value="Search">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- topbar end -->
+
+    <!-- masthead -->
+    <header id="masthead" class="site-header clearfix" style="top: 60px;">
+
+        <div class="header-main clearfix">
+            <div class="container mobile_relative">
+                <div class="row">
+                    <div class="site-logo col-md-3 col-sm-6 col-xs-6">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo-light.png" alt="CargoHub" class="logo-light show-logo">
+                            <img src="images/logo.png" alt="CargoHub" class="logo-dark hide-logo">
+                        </a>
+                        <h1 class="site-title"><a href="#">CargoHub</a></h1>
+                        <h2 class="site-description">Just another Steel Themes Sites site</h2>
+                    </div>
+                    <div class="site-menu col-md-9 col-sm-6 col-xs-6">
+                        <nav id="site-navigation" class="main-nav primary-nav nav">
+                            <ul class="menu">
+                                <li class="active has-children"><a href="index.html" class="dropdown-toggle">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Page 1</a></li>
+                                        <li><a href="home-page-2.html">Home Page 2</a></li>
+                                        <li><a href="home-page-3.html">Home Page 3</a></li>
+                                        <li><a href="home-page-4.html">Home Page 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="services.html" class="dropdown-toggle">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="services.html">All Services</a></li>
+                                        <li><a href="road-freight-forwarding.html">Road Freight Forwarding</a></li>
+                                        <li><a href="ocean-freight-forwarding.html">Ocean Freight Forwarding</a></li>
+                                        <li><a href="air-freight-forwarding.html">Air Freight Forwarding</a></li>
+                                        <li><a href="warehousing.html">Warehousing</a></li>
+                                        <li><a href="door-to-door-delivery.html">Door to Door Delivery</a></li>
+                                        <li><a href="ground-transport.html">Ground Transport</a></li>
+                                        <li><a href="worldwide-transport.html">Worldwide Transport</a></li>
+                                        <li><a href="cargo-service.html">Cargo Service</a></li>
+                                        <li><a href="packaging-storage.html">Packaging &amp; Storage</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="#" class="dropdown-toggle">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="faqs.html">FAQS</a></li>
+                                        <li><a href="our-prices.html">Our Prices</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="gallery.html" class="dropdown-toggle">Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-column-4.html">Gallery Four Columns</a></li>
+                                        <li><a href="gallery-column-3.html">Gallery Three Columns</a></li>
+                                        <li><a href="gallery.html">Gallery Two Columns</a></li>
+                                        <li><a href="gallery-single.html">Gallery Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="#" class="dropdown-toggle">Features</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="request-a-quote.html">Request A Quote</a></li>
+                                        <li><a href="track-your-shipment.html">Track Your Shipment</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="blog.html" class="dropdown-toggle">News</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-column-2.html">Blog Two Columns</a></li>
+                                        <li><a href="blog-column-3.html">Blog Three Columns</a></li>
+                                        <li><a href="blog-column-4.html">Blog Four Columns</a></li>
+                                        <li><a href="blog-sidebar.html">Blog With Sidebar</a></li>
+                                        <li><a href="blog-single.html">Blog Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="extra-menu-item menu-item-button-link">
+                                    <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <a href="#" class="navbar-toggle">
+                        <span class="navbar-icon">
+							<span class="navbars-line"></span>
+                        </span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- masthead end -->
+
+    <!--Page Header-->
+    <div class="page-header title-area">
+        <div class="header-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="page-title">Gallery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
+                        <nav class="breadcrumb">
+                            <a class="home" href="#"><span>Home</span></a>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span>Gallery</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Page Header end-->
+
+    <!--faq pagesec-->
+    <section class="gallerypagesec secpadd">
+        <div class="container">
+            <div class="row">
+                <div class="all-project col-sm-12">
+                    <div class="filters-dropdown">
+                        <ul class="filter">
+                            <li class="active" data-filter="*">View All</li>
+                            <li data-filter=".project_category-freight-forwarding">Freight Forwarding</li>
+                            <li data-filter=".project_category-transport">Transport</li>
+                            <li data-filter=".project_category-materials">Materials</li>
+                            <li data-filter=".project_category-shipment">Shipment</li>
+                            <li data-filter=".project_category-cargo">Cargo</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="list-project" style="position: relative; height: 1018.84px;">
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-freight-forwarding project_category-transport"
+                                 style="position: absolute; left: 0%; top: 0px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/1.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/1.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-materials project_category-transport "
+                                 style="position: absolute; left: 33.3323%; top: 0px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/2.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/2.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-freight-forwarding project_category-transport "
+                                 style="position: absolute; left: 66.6646%; top: 0px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/3.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/3.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-materials project_category-transport"
+                                 style="position: absolute; left: 0%; top: 339.612px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/4.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/4.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-freight-forwarding project_category-materials "
+                                 style="position: absolute; left: 33.3323%; top: 339.612px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/5.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/5.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-shipment"
+                                 style="position: absolute; left: 66.6646%; top: 339.612px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/6.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/6.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-cargo project_category-shipment"
+                                 style="position: absolute; left: 0%; top: 679.224px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/7.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/7.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-cargo"
+                                 style="position: absolute; left: 33.3323%; top: 679.224px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/8.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/8.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                            <div class="project-wrapper col-xs-12 col-sm-6 col-md-4  project  project_category-cargo project_category-shipment"
+                                 style="position: absolute; left: 66.6646%; top: 679.224px;">
+                                <div class="project-thumbnail">
+                                    <a href="#" class="pro-link"></a>
+                                    <a href="#"><img src="images/projects/9.jpg" alt=""></a>
+                                    <div class="project-button">
+                                        <a href="images/projects/9.jpg" data-fancybox="gallery"
+                                           class="button-link fancybox"><i class="fa fa-search-plus"
+                                                                           aria-hidden="true"></i></a>
+                                        <a href="#" class="button-link"><i class="fa fa-link"
+                                                                           aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #project-## -->
+
+                        </div>
+                        <nav class="navigation paging-navigation numeric-navigation">
+                            <span class="page-numbers current">1</span>
+                            <a class="page-numbers" href="#">2</a>
+                            <a class="next page-numbers" href="#"><i class="fa fa-angle-right"
+                                                                     aria-hidden="true"></i></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--faqpagesec end-->
+
+    <!--footer sec-->
+    <div class="footer-widgets widgets-area">
+        <div class="contact-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="contact col-md-3 col-xs-12 col-sm-12">
+                        <a href="#" class="footer-logo"><img src="images/logo-light.png" alt="Footer Logo"></a>
+                    </div>
+                    <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-signs"></i>
+                        <p>Address : Cargo Hub,</p>
+                        <h4>NEWYORK 10012, USA</h4>
+                    </div>
+                    <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-phone-call "></i>
+                        <p>Toll Free Number :</p>
+                        <h4>+44 567 890123 – 30</h4>
+                    </div>
+                    <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-clock-1"></i>
+                        <p>Opening Hours :</p>
+                        <h4>MON – FRI: 8AM – 5PM</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sidebars">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-sidebar footer-1 col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget widget_text">
+                            <h4 class="widget-title">About Cargo</h4>
+                            <div class="textwidget">
+                                <p>Cargo HUB Logistics Services is a global supplier of transport and logistics
+                                    solutions. We have offices in more than 20 countries and an international network of
+                                    partners and agents.</p>
+                            </div>
+                        </div>
+                        <div class="widget cargohub-social-links-widget">
+                            <div class="list-social style-1">
+                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sidebar footer-2 col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <div class="menu-service-menu-container">
+                                <ul class="menu">
+                                    <li><a href="#">All Services</a></li>
+                                    <li><a href="#">Ground Transport</a></li>
+                                    <li><a href="#">Cargo Service</a></li>
+                                    <li><a href="#">Warehousing</a></li>
+                                    <li><a href="#">Road Freight Forwarding</a></li>
+                                    <li><a href="#">Ocean Freight Forwarding</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sidebar footer-3 col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget latest-project-widget">
+                            <h4 class="widget-title">Photo gallery</h4>
+                            <div class="latest-project-list clearfix">
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="latest-project clearfix">
+                                    <div class="fp-widget-thumb">
+                                        <a class="widget-thumb" href="#">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img src="images/projects/fg6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sidebar footer-4 col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget widget_mc4wp_form_widget">
+                            <h4 class="widget-title">Our Newsletter</h4>
+                            <form>
+                                <div class="footform">
+                                    <div class="fh-form-field">
+                                        <p>
+                                            Sign up today for tips and latest news and exclusive special offers.
+                                        </p>
+                                        <div class="subscribe">
+                                            <input name="EMAIL" placeholder="Enter Your Email" required="" type="email">
+                                            <input value="Sign Up" type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- / MailChimp for WordPress Plugin -->
+                        </div>
+                        <div class="widget widget_text">
+                            <div class="textwidget">
+                                <p>We don’t do spam and Your mail id very confidential.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer sec end-->
+
+    <!--copyright sec-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-copyright col-md-6 col-sm-12 col-sx-12">
+                    <div class="site-info">Copyright @ 2017 <a href="#">Steelthemes</a>, All Right Reserved</div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 text-right footer-text"><a href="#">Purchase Now</a></div>
+            </div>
+        </div>
+    </footer>
+    <!--copyright sec end-->
+</div>
+<!--End pagewrapper-->
+
+<!--primary-mobile-nav-->
+<div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
+    <a href="#" class="close-canvas-mobile-panel">×</a>
+    <ul class="menu">
+        <li class="current-menu-item menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                                               aria-hidden="true"></i></span><a
+                href="index.html" class="dropdown-toggle">Home</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">Home</li>
+                <li><a href="index.html" class="dropdown-toggle">Home Page 1</a></li>
+                <li><a href="home-page-2.html" class="dropdown-toggle">Home Page 2</a></li>
+                <li><a href="home-page-3.html" class="dropdown-toggle">Home Page 3</a></li>
+                <li><a href="home-page-4.html" class="dropdown-toggle">Home Page 4</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i></span><a
+                href="services.html" class="dropdown-toggle">Services</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">Services</li>
+                <li><a href="services.html" class="dropdown-toggle">All Services</a></li>
+                <li><a href="road-freight-forwarding.html" class="dropdown-toggle">Road Freight Forwarding</a></li>
+                <li><a href="ocean-freight-forwarding.html" class="dropdown-toggle">Ocean Freight Forwarding</a></li>
+                <li><a href="air-freight-forwarding.html" class="dropdown-toggle">Air Freight Forwarding</a></li>
+                <li><a href="warehousing.html" class="dropdown-toggle">Warehousing</a></li>
+                <li><a href="door-to-door-delivery.html" class="dropdown-toggle">Door to Door Delivery</a></li>
+                <li><a href="ground-transport.html" class="dropdown-toggle">Ground Transport</a></li>
+                <li><a href="worldwide-transport.html" class="dropdown-toggle">Worldwide Transport</a></li>
+                <li><a href="cargo-service.html" class="dropdown-toggle">Cargo Service</a></li>
+                <li><a href="packaging-storage.html" class="dropdown-toggle">Packaging &amp; Storage</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i></span><a
+                href="projects.html" class="dropdown-toggle">Pages</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">Pages</li>
+                <li><a href="about-us.html" class="dropdown-toggle">About Us</a></li>
+                <li><a href="faqs.html" class="dropdown-toggle">FAQS</a></li>
+                <li><a href="our-prices.html" class="dropdown-toggle">Our Prices</a></li>
+                <li><a href="testimonials.html" class="dropdown-toggle">Testimonials</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i></span><a
+                href="gallery.html" class="dropdown-toggle">Gallery</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">Gallery</li>
+                <li><a href="gallery-column-4.html" class="dropdown-toggle">Gallery Four Columns</a></li>
+                <li><a href="gallery-column-3.html" class="dropdown-toggle">Gallery Three Columns</a></li>
+                <li><a href="gallery.html" class="dropdown-toggle">Gallery Two Columns</a></li>
+                <li><a href="gallery-single.html" class="dropdown-toggle">Gallery Single</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i></span><a href="#"
+                                                                                                              class="dropdown-toggle">Features</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">Features</li>
+                <li><a href="request-a-quote.html" class="dropdown-toggle">Request A Quote</a></li>
+                <li><a href="track-your-shipment.html" class="dropdown-toggle">Track Your Shipment</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children"><span class="toggle-children "><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i></span><a
+                href="blog.html" class="dropdown-toggle">News</a>
+            <ul class="sub-menu">
+                <li class="menu-back">undefined</li>
+                <li class="menu-parent-items">News</li>
+                <li><a href="blog-column-2.html" class="dropdown-toggle">Blog Two Columns</a></li>
+                <li><a href="blog-column-3.html" class="dropdown-toggle">Blog Three Columns</a></li>
+                <li><a href="blog-column-4.html" class="dropdown-toggle">Blog Four Columns</a></li>
+                <li><a href="blog-sidebar.html" class="dropdown-toggle">Blog With Sidebar</a></li>
+                <li><a href="blog-single.html" class="dropdown-toggle">Blog Single Post</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="extra-menu-item menu-item-button-link">
+            <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
+        </li>
+    </ul>
+
+</div>
+<div id="off-canvas-layer" class="off-canvas-layer"></div>
+<!--primary-mobile-nav end-->
+
+<!--Scroll to top-->
+<a id="scroll-top" class="backtotop" href="#page-top"><i class="fa fa-angle-up"></i></a>
+
+<!--Color switcher-->
+<div class="demo_changer" id="demo_changer">
+    <div class="demo-icon fa fa-sliders"></div>
+    <div class="form_holder">
+        <h3 class="demo-title">Customize CargoHub</h3>
+
+        <div class="line"></div>
+        <p>Color Scheme</p>
+        <div class="predefined_styles" id="styleswitch_area">
+            <a href="?default=true" data-rel="default" class="styleswitch"
+               style="background:#ff0000;border-right-color: #0c1239;border-bottom-color: #0c1239"></a>
+            <a href="#" data-rel="navy-darkblue" class="styleswitch"
+               style="background:#00baff;border-right-color: #0c1239;border-bottom-color: #0c1239"></a>
+            <a href="#" data-rel="orange-black" class="styleswitch"
+               style="background:#ee6012;border-right-color: #202020;border-bottom-color: #202020"></a>
+            <a href="#" data-rel="yellow-blue" class="styleswitch"
+               style="background:#f6a604;border-right-color: #0032ab;border-bottom-color: #0032ab"></a>
+        </div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<!-- jquery Liabrary -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!-- bootstrap v3.3.6 js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- fancybox js -->
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- owl.carousel js -->
+<script src="js/owl.js"></script>
+<!-- counter js -->
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<!-- validate js -->
+<script src="js/validate.js"></script>
+<!-- switcher js -->
+<script src="js/switcher.js"></script>
+
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<script src="js/gmap.js"></script>
+<script src="js/map-helper.js"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/revolution/extensions/revolution.extension.video.min.js"></script>
+
+<!-- script JS  -->
+<script src="js/scripts.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+    <meta content="Coderthemes" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="../../static/adminResources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/app.css" rel="stylesheet" type="text/css"/>
+    <!-- your custom css -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../../static/adminResources/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body class="pb-0">
+
+<div class="wrapper-page">
+    <div class="account-pages">
+        <div class="account-box">
+            <div class="account-logo-box text-center bg-primary p-4">
+                <h3 class="m-0 text-white">User registration</h3>
+                <h5 class="text-white mb-0">Create a new Account</h5>
+            </div>
+            <div class="account-content">
+                <form class="form-horizontal" action="/user/insertRegister" method="post">
+
+                    <div class="form-group">
+                        <div class="col-12">
+                            <label for="firstName">Company Name: </label>
+                            <input class="form-control" type="text" required="" name="companyName"
+                                   placeholder="Enter Company name">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-12">
+                                <label for="firstName">First name :</label>
+                                <input class="form-control" type="text" required="" name="registerFirstname"
+                                       placeholder="Enter First name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-12">
+                                <label for="lastName">Last name :</label>
+                                <input class="form-control" type="text" required="" placeholder="Enter Last name"
+                                       name="registerLastname">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-12">
+                                <span class="fh-radio">
+                                    <label for="gender" name="registerGender">Gender :</label>
+                                    <label><input name="registerGender" value="MALE" checked="checked"
+                                                  type="radio">MALE</label>
+                                    <label><input name="registerGender" value="FEMALE"
+                                                  type="radio">FEMALE</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-12">
+                                <label for="lastName">Contact No :</label>
+                                <input class="form-control" type="text" required="" placeholder="Enter Contact No"
+                                       name="registerContact">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-12">
+                                <label for="loginUsername">User name :</label>
+                                <input class="form-control" type="email" required="" name="loginUsername"
+                                       placeholder="Enter User name">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-12">
+                                <label for="address">Address :</label>
+                                <textarea class="form-control" name="registerAddress" required=""
+                                          placeholder="Enter Address">
+                                        </textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row text-right m-t-10">
+                            <div class="col-12">
+                                <button class="btn btn-md btn-primary waves-effect waves-light" type="submit">Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row mt-4">
+                    <div class="col-sm-12 text-center">
+                        <a href="/">Already have account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end account-box-->
+
+
+</div>
+
+
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/adminResources/js/metisMenu.min.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- App js -->
+<script src="../../static/adminResources/js/jquery.core.js"></script>
+<script src="../../static/adminResources/js/jquery.app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Helmet Detection and Face Recognition</title>
+    <!-- Stylesheets -->
+    <!-- bootstrap v3.3.6 css -->
+    <link href="../../static/userResources/css/bootstrap.css" rel="stylesheet">
+    <!-- font-awesome css -->
+    <link href="../../static/userResources/css/font-awesome.css" rel="stylesheet">
+    <!-- flaticon css -->
+    <link href="../../static/userResources/css/flaticon.css" rel="stylesheet">
+    <!-- factoryplus-icons css -->
+    <link href="../../static/userResources/css/factoryplus-icons.css" rel="stylesheet">
+    <!-- animate css -->
+    <link href="../../static/userResources/css/animate.css" rel="stylesheet">
+    <!-- owl.carousel css -->
+    <link href="../../static/userResources/css/owl.css" rel="stylesheet">
+    <!-- fancybox css -->
+    <link href="../../static/userResources/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="../../static/userResources/css/hover.css" rel="stylesheet">
+    <link href="../../static/userResources/css/frontend.css" rel="stylesheet">
+    <link href="../../static/userResources/css/style.css" rel="stylesheet">
+    <!-- switcher css -->
+    <link href="../../static/userResources/css/switcher.css" rel="stylesheet">
+    <link rel='stylesheet' id='factoryhub-color-switcher-css' href='../../static/userResources/css/default.css'/>
+    <!-- revolution slider css -->
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/navigation.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../static/userResources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../static/userResources/images/favicon.ico" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/userResources/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]><script src="userResources/js/respond.js"></script><![endif]-->
+</head>
+
+<body class="home header-transparent  header-sticky header-v1 hide-topbar-mobile">
+<div id="page">
+
+    <!-- Preloader-->
+    <div class="preloader"></div>
+
+    <!-- topbar -->
+    <div id="fh-header-minimized" class="fh-header-minimized fh-header-v1"></div>
+
+    {% include 'user/header.html' %}
+
+    {% include 'user/menu.html' %}
+
+    <!--Page Header-->
+    <div class="page-header title-area">
+        <div class="header-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="page-title">View Detection</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
+                        <nav class="breadcrumb">
+                            <a class="home" href="#"><span>Home</span></a>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span>Detection</span>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span>View Detection</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Page Header end-->
+
+    <!--faq pagesec-->
+    <section class="textmpagesec secpadd">
+        <div class="container">
+            <div class="fh-testimonials-grid fh-testimonials ">
+                <div class="testi-list row">
+                    {#                        {% for row in videoVOList %}#}
+                    <div class="col-md-12">
+                        <div class="testi-item">
+                            <span class="testi-icon"><i class="flaticon-quotations "></i></span>
+
+                            <div class="testi-content">
+
+                                <span class="testi-name">Detection File name : </span>
+                                <span class="testi-name">Detection Accuracy : </span>
+                                <!--<div class="testi-des">These guys are just the coolest company ever! They were aware of our transported for road and tail and well as complex transport services.</div>-->
+                                <span class="testi-name">Detection Video :
+                                        <a href=""
+                                           target="_blank" class="testi-job">
+                                        <span> View </span></a></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    {#                        {% endfor %}#}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--faqpagesec end-->
+
+<!--footer sec-->
+{% include 'user/footer.html' %}
+<!--End pagewrapper-->
+
+<!--primary-mobile-nav-->
+
+<!--Scroll to top-->
+<a id="scroll-top" class="backtotop" href="#page-top"><i class="fa fa-angle-up"></i></a>
+
+<!--Color switcher-->
+<div class="demo_changer" id="demo_changer">
+    <div class="demo-icon fa fa-sliders"></div>
+    <div class="form_holder">
+        <h3 class="demo-title">Customize CargoHub</h3>
+
+        <div class="line"></div>
+        <p>Color Scheme</p>
+        <div class="predefined_styles" id="styleswitch_area">
+            <a href="?default=true" data-rel="default" class="styleswitch"
+               style="background:#ff0000;border-right-color: #0c1239;border-bottom-color: #0c1239"></a>
+            <a href="#" data-rel="navy-darkblue" class="styleswitch"
+               style="background:#00baff;border-right-color: #0c1239;border-bottom-color: #0c1239"></a>
+            <a href="#" data-rel="orange-black" class="styleswitch"
+               style="background:#ee6012;border-right-color: #202020;border-bottom-color: #202020"></a>
+            <a href="#" data-rel="yellow-blue" class="styleswitch"
+               style="background:#f6a604;border-right-color: #0032ab;border-bottom-color: #0032ab"></a>
+        </div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<!-- jquery Liabrary -->
+<script src="../../static/userResources/js/jquery-1.12.4.min.js"></script>
+<!-- bootstrap v3.3.6 js -->
+<script src="../../static/userResources/js/bootstrap.min.js"></script>
+<!-- fancybox js -->
+<script src="../../static/userResources/js/jquery.fancybox.pack.js"></script>
+<script src="../../static/userResources/js/jquery.fancybox-media.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- owl.carousel js -->
+<script src="../../static/userResources/js/owl.js"></script>
+<!-- counter js -->
+<script src="../../static/userResources/js/jquery.appear.js"></script>
+<script src="../../static/userResources/js/jquery.countTo.js"></script>
+<!-- validate js -->
+<script src="../../static/userResources/js/validate.js"></script>
+<!-- switcher js -->
+<script src="../../static/userResources/js/switcher.js"></script>
+
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<script src="../../static/userResources/js/gmap.js"></script>
+<script src="../../static/userResources/js/map-helper.js"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="../../static/userResources/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.video.min.js"></script>
+
+<!-- script JS  -->
+<script src="../../static/userResources/js/scripts.min.js"></script>
+<script src="../../static/userResources/js/script.js"></script>
+</body>
+
+</html>

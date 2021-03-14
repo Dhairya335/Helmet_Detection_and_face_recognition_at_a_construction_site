@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmet Detection and Face Recognition</title>
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+    <meta content="Coderthemes" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="../../static/adminResources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/app.css" rel="stylesheet" type="text/css"/>
+    <!-- your custom css -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../../static/adminResources/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Top Bar Start -->
+
+
+    {% include 'admin/header.html' %}
+
+
+    <!-- Top Bar End -->
+
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+
+    {% include 'admin/menu.html' %}
+
+
+    <!-- Left Sidebar End -->
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title float-left">Manage Package</h4>
+
+                            <ol class="breadcrumb float-right">
+                                <li class="breadcrumb-item"><a href="#">Velonic</a></li>
+                                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                                <li class="breadcrumb-item active">Form</li>
+                            </ol>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="m-t-0 header-title mb-0">Add Package</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <form action="/admin/insertPackage" method="post">
+                                    <div class="form-group">
+                                        <label for="userName">Package Name<span class="text-danger">*</span></label>
+                                        <input type="text" name="packageName" parsley-trigger="change" required
+                                               placeholder=" Package Name" class="form-control" id="packageName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailAddress">Package Duration<span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" name="packageDuration" parsley-trigger="change" required
+                                               placeholder=" Package Duration" class="form-control"
+                                               id="packageDuration">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass1">Package Price<span class="text-danger">*</span></label>
+                                        <input id="packagePrice" type="text" placeholder="Package Price" required
+                                               name="packagePrice"
+                                               class="form-control">
+                                    </div>
+
+                                    <div class="form-group text-center m-b-0">
+                                        <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+
+
+                </div>
+            </div> <!-- end card -->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+</div> <!-- container -->
+
+</div> <!-- content -->
+
+
+{% include 'admin/footer.html' %}
+
+
+</div>
+
+
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/adminResources/js/metisMenu.min.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Parsley js -->
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+
+<!-- App js -->
+<script src="../../static/adminResources/js/jquery.core.js"></script>
+<script src="../../static/adminResources/js/jquery.app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('form').parsley();
+    });
+</script>
+
+</body>
+</html>
