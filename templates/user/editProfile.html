@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CargoHub</title>
+    <!-- Stylesheets -->
+    <!-- bootstrap v3.3.6 css -->
+    <link href="../../static/userResources/css/bootstrap.css" rel="stylesheet">
+    <!-- font-awesome css -->
+    <link href="../../static/userResources/css/font-awesome.css" rel="stylesheet">
+    <!-- flaticon css -->
+    <link href="../../static/userResources/css/flaticon.css" rel="stylesheet">
+    <!-- factoryplus-icons css -->
+    <link href="../../static/userResources/css/factoryplus-icons.css" rel="stylesheet">
+    <!-- animate css -->
+    <link href="../../static/userResources/css/animate.css" rel="stylesheet">
+    <!-- owl.carousel css -->
+    <link href="../../static/userResources/css/owl.css" rel="stylesheet">
+    <!-- fancybox css -->
+    <link href="../../static/userResources/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="../../static/userResources/css/hover.css" rel="stylesheet">
+    <link href="../../static/userResources/css/frontend.css" rel="stylesheet">
+    <link href="../../static/userResources/css/style.css" rel="stylesheet">
+    <!-- switcher css -->
+    <link href="../../static/userResources/css/switcher.css" rel="stylesheet">
+    <link rel='stylesheet' id='factoryhub-color-switcher-css' href='../../static/userResources/css/default.css'/>
+    <!-- revolution slider css -->
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="../../static/userResources/css/navigation.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../static/userResources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../static/userResources/images/favicon.ico" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/userResources/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]><script src="userResources/js/respond.js"></script><![endif]-->
+</head>
+
+<body class="home header-transparent  header-sticky header-v1 hide-topbar-mobile">
+<div id="page">
+
+    <!-- Preloader-->
+    <div class="preloader"></div>
+
+    <!-- topbar -->
+    <div id="fh-header-minimized" class="fh-header-minimized fh-header-v1"></div>
+
+
+    <!--contact pagesec-->
+
+    <!--contact end-->
+
+    <!--contact form -->
+    <section class="contactpagform graybg secpadd">
+        <div class="container">
+            <div class="fh-section-title clearfix f25 text-center version-dark paddbtm40">
+                <h2>Edit Profile</h2>
+
+
+                <form method="post" action="/user/userUpdateProfile" novalidate="novalidate">
+                    <div class="fh-form fh-form-3">
+                        {% for row in registerVOList %}
+                            <div class="row">
+                                <input type="hidden" name="registerId" value="{{ row[0]['registerId'] }}">
+                                <input type="hidden" name="loginId" value="{{ row[1]['loginId'] }}">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p class="field">
+                                        <input name="companyName" placeholder="Company Name*" type="text"
+                                               value="{{ row[0]['companyName'] }}">
+                                    </p>
+
+                                    <p class="field">
+                                        <input name="registerFirstname" placeholder="First Name*" type="text"
+                                               value="{{ row[0]['registerFirstname'] }}">
+                                    </p>
+
+                                    <p class="field">
+                                        <input name="registerLastname" placeholder="Last name*" type="text"
+                                               value="{{ row[0]['registerLastname'] }}">
+                                    </p>
+
+                                    <p class="field">
+                                        <input name="loginUsername" placeholder="Last name*" type="text"
+                                               value="{{ row[1]['loginUsername'] }}">
+                                    </p>
+
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    <p class="field">
+                                        <input name="registerContact" placeholder="Contact No*" type="text"
+                                               value="{{ row[0]['registerContact'] }}">
+                                    </p>
+
+                                    <p class="field">
+                            <span class="fh-radio">
+                                    <input name="registerGender" checked="checked"
+                                           type="radio" value="MALE"
+                                           style="margin: 20px 8px 18px 23px;">  MALE
+                                    <input name="registerGender" value="FEMALE"
+                                           type="radio" style="margin: 20px 8px 18px 23px">  FEMALE
+                                </span>
+                                    </p>
+
+                                    <p class="field single-field">
+                                        <textarea name="registerAddress" style="height:130px;"
+                                                  placeholder="Address">{{ row[0]['registerAddress'] }}</textarea>
+                                    </p>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <p class="field submit">
+                                        <button class="fh-btn" type="submit">Submit</button>
+                                    </p>
+
+
+                                </div>
+                                <div id="loading" style="display:none"><img
+                                        src="../../static/userResources/images/ajax-loader.png" alt="loading"/></div>
+                                <div class="contact-form-message"></div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--contact form  end -->
+
+
+    <!--primary-mobile-nav-->
+
+    <!--primary-mobile-nav end-->
+
+    <!--Scroll to top-->
+
+</div>
+
+<!-- jquery Liabrary -->
+<script src="../../static/userResources/js/jquery-1.12.4.min.js"></script>
+<!-- bootstrap v3.3.6 js -->
+<script src="../../static/userResources/js/bootstrap.min.js"></script>
+<!-- fancybox js -->
+<script src="../../static/userResources/js/jquery.fancybox.pack.js"></script>
+<script src="../../static/userResources/js/jquery.fancybox-media.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- owl.carousel js -->
+<script src="../../static/userResources/js/owl.js"></script>
+<!-- counter js -->
+<script src="../../static/userResources/js/jquery.appear.js"></script>
+<script src="../../static/userResources/js/jquery.countTo.js"></script>
+<!-- validate js -->
+<script src="../../static/userResources/js/validate.js"></script>
+<!-- switcher js -->
+<script src="../../static/userResources/js/switcher.js"></script>
+
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<script src="../../static/userResources/js/gmap.js"></script>
+<script src="../../static/userResources/js/map-helper.js"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="../../static/userResources/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="../../static/userResources/js/revolution.extension.video.min.js"></script>
+
+<!-- script JS  -->
+<script src="../../static/userResources/js/scripts.min.js"></script>
+<script src="../../static/userResources/js/script.js"></script>
+</body>
+
+</html>
